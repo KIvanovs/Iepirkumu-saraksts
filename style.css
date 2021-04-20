@@ -1,8 +1,32 @@
-body{
-    background-color: lawngreen;
+body {
+    background-color: lightgray;
 }
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#knopka {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#PievProduktu {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 50px ;
+    width: 200px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
+}
+
+#MiddleBackground {
+    background-color: mediumblue;
+    padding: 100px;
+    margin-left: 700px;
+    margin-right: 700px;
 }
