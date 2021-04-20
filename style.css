@@ -6,6 +6,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: mintcream;
 }
 
 #knopka {
@@ -29,4 +30,8 @@ h1 {
     padding: 100px;
     margin-left: 700px;
     margin-right: 700px;
+}
+
+#clicked {
+    display: none;
 }
