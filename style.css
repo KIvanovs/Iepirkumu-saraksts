@@ -28,10 +28,30 @@ h1 {
 #MiddleBackground {
     background-color: mediumblue;
     padding: 100px;
-    margin-left: 700px;
-    margin-right: 700px;
+    margin-left: 675px;
+    margin-right: 678px;
 }
 
 #clicked {
     display: none;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    position: fixed;
+    background-color: mediumblue;
+    color: mintcream;
+    margin-left: 675px;
+    text-align: center;
 }
+
+#JaunsSaraksts {
+    height: 24px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#kolvo {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#produkt {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
