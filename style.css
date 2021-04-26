@@ -47,11 +47,11 @@ h1 {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-#kolvo {
+#daudzums {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-#produkt {
+#iepirkums {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
@@ -65,4 +65,18 @@ h1 {
     padding: 15px;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin-top: 100px;
+}
+
+input#produkt {
+    border: solid 2px black;
+}
+
+input#kolvo {
+    border: solid 2px black;
+}
+
+#Block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
