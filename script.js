@@ -2,7 +2,7 @@ const CLICKED = document.getElementById('clicked');
 let list = [];
 
 window.addEventListener('load', () => {
-    list = JSON.parse(localStorage.getItem("gramatas") || "[]");
+    list = JSON.parse(localStorage.getItem("list") || "[]");
     console.log(list);
     render();
 });
