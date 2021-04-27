@@ -53,3 +53,22 @@ DeleteList.addEventListener('click', (e) => {
       localStorage.setItem('list',JSON.stringify(list));
     }
   });
+
+  function newList(){
+    if(prece.value === ""){
+        alert('Ievadiet preci!')
+    };
+
+    if(daudzums.value === ""){
+        alert('Ievadiet preces daudzumu!')
+    };
+
+    if(prece.value && daudzums.value != ''){
+
+        let alarm_list = {prece: prece.value, daudzums: daudzums.value};
+        console.log(alarm_list);
+        list.push(alarm_list);
+        render()
+    };
+    localStorage.setItem('list',JSON.stringify(list));
+}
