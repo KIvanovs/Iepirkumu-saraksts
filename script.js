@@ -14,16 +14,31 @@ document.getElementById('PievProduktu').addEventListener('click', () => {
 
 document.getElementById('JaunsSaraksts').addEventListener('click', () => {
     CLICKED.style.display = 'none';
-
-    let saraksts = {prece: prece.value, daudzums: daudzums.value};
-
-    prece.value = "";
-    daudzums.value = "";
-
-    list.push(saraksts);
-
-    render();
+    alarm();
 });
+
+function alarm(){
+    if(prece.value === ""){
+        alert('Ievadiet preci!')
+    };
+
+    if(daudzums.value === ""){
+        alert('Ievadiet preces daudzumu!')
+    };
+
+    if(prece.value && daudzums.value != ''){
+
+
+        let saraksts = {prece: prece.value, daudzums: daudzums.value};
+
+        prece.value = "";
+        daudzums.value = "";
+
+        list.push(saraksts);
+
+        render();
+    };
+};
 
 function render() {
     let prece_saraksts = document.getElementById('Block');
@@ -40,7 +55,7 @@ function render() {
         prece_saraksts.innerHTML += saraksts;
     }
 
-    localStorage.setItem("gramatas", JSON.stringify(list));
+    localStorage.setItem("list", JSON.stringify(list));
 }
 
 const DeleteList = document.querySelector('#Block')
@@ -53,22 +68,3 @@ DeleteList.addEventListener('click', (e) => {
       localStorage.setItem('list',JSON.stringify(list));
     }
   });
-
-  function newList(){
-    if(prece.value === ""){
-        alert('Ievadiet preci!')
-    };
-
-    if(daudzums.value === ""){
-        alert('Ievadiet preces daudzumu!')
-    };
-
-    if(prece.value && daudzums.value != ''){
-
-        let alarm_list = {prece: prece.value, daudzums: daudzums.value};
-        console.log(alarm_list);
-        list.push(alarm_list);
-        render()
-    };
-    localStorage.setItem('list',JSON.stringify(list));
-}
