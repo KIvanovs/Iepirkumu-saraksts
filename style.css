@@ -65,6 +65,7 @@ h1 {
     padding: 15px;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin-top: 100px;
+    margin-left: 25px;
 }
 
 input#produkt {
@@ -79,4 +80,10 @@ input#kolvo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.del {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    border-radius: 10px;
+    margin-top: 40px;
 }
